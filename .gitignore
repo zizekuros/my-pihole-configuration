@@ -1,2 +1,4 @@
-dnsmasq.d
-pihole
+dnsmasq.d/*
+!dnsmasq.d/.gitkeep
+pihole/*
+!pihole/.gitkeep
