@@ -1,26 +1,26 @@
-# My Pi-hole configuration (Docker)
+# My Pi-hole Configuration (Docker)
 
-This repository holds the Pi-hole configuration that I'm running in my home network.
+This repository holds the Pi-hole configuration that I'm running on my home network.
 
-Notes:
-- I am running the container on IP address: **192.168.10.100**
-- You should assign a password for accessing the console through the web interface
+## Notes
+- The Pi-hole Docker container is running on the IP address: **192.168.10.100**
+- It's recommended to assign a password for accessing the console through the web interface.
 
-## How to start/stop it
+## How to Start/Stop It
 
-To start the Pi-hole in Docker, run following command:
+To start Pi-hole in Docker, run the following command:
 
 ```bash
-docker compose up -d
+docker-compose up -d
 ```
 
-Then, you have to update the update the DNS entries on your local machine/device or router. In my case, the primary DNS server is: **192.168.10.100**
+After starting Pi-hole, make sure to update the DNS settings on your local machine, device, or router to use 192.168.10.100 (as in my scenario) as the primary DNS server.
 
 To stop the Pi-hole, run:
 ```bash
 docker compose down
 ```
 
-## Web dashboard
+## Web Dashboard
 
-Web dashboard is accessible here: http://my.pihole:3333/admin
+You can access the Pi-hole web dashboard at http://my.pihole:3333/admin.
