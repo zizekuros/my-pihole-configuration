@@ -2,3 +2,5 @@ dnsmasq.d/*
 !dnsmasq.d/.gitkeep
 pihole/*
 !pihole/.gitkeep
+!pihole/custom.list
+!pihole/gravity.db
